@@ -1,0 +1,18 @@
+body{
+    background-color: blanchedalmond;
+    text-align: center;
+}
+#roll{
+    font-size: 3em;
+    padding: 5px 25px;
+    border-radius: 10px;
+    background-color: green;
+    transition: .5s;
+    cursor: pointer;
+}
+#roll:hover{
+    background-color: red;
+}
+.dices{
+    font-size : 3em;
+}
