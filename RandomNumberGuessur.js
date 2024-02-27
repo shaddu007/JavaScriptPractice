@@ -1,22 +1,7 @@
-const prompt = require("prompt-sync")();
-const target = Math.round(Math.random()*100)
-let guesses = 0;
-while(true)
-{
-    const guess = Number(prompt("Enter your guess:"));
-    guesses++;
-    if(guess>target)
-    {
-        console.log("Your guess is too high!");
-    }
-    else if(guess<target)
-    {
-        console.log("Your guess is too low!");
-    }
-    else{
-        console.log("Congrats you have guessed it!");
-        break;
-    }
-}
+// const prompt = require("prompt-sync")();
+const numbers = [1,2,3,4,5,6,7,8,9];
 
-console.log("You have tried",guesses,"to guess the number");
+const result = numbers.reduce((accumulator,element)=>{
+    return accumulator+=element
+} );
+console.log(`$${result}`);
